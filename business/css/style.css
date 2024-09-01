@@ -1,0 +1,401 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер для всей страницы */
+.page {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Общие стили для header */
+.header {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto; /* Центрируем header */
+}
+
+/* Верхний жёлтый блок */
+.header__top {
+    background-color: #F8A24E;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    width: 100%;
+}
+
+/* Стили для навигации */
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: #1B1B1B;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 9px 40px;
+    border-radius: 20px 20px 0 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для выбранной вкладки */
+.header__nav-item--selected .header__nav-link {
+    background-color: #1B1B1B;
+    color: #FFFFFF;
+    font-weight: normal;
+    width: 168px;
+    line-height: 38px;
+    margin-bottom: -4px;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Нижний чёрный блок */
+.header__bottom {
+    background-color: #1B1B1B;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 60px 0 50px;
+}
+
+.header__logo img {
+    height: 53px;
+    width: 157px;
+}
+
+.header__button {
+    width: 182px;
+    height: 57px;
+    background-color: #954CED;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 30px 16px 30px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Блок section */
+.section {
+    width: 100%;
+    min-height: 591px;
+    padding: 0;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.section--theme-black {
+    background-color: #1B1B1B;
+}
+
+.section__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+.section__content {
+    max-width: 50%;
+    width: 671px;
+    height: 356px;
+    margin-left: 110px;
+}
+
+.section__title {
+    font-size: 96px;
+    color:#FFFFFF;
+    margin-top: -50px;
+    font-weight: 700;
+    line-height: 101.76px;
+}
+
+.section__description {
+    width: 534px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+
+.section__image-wrapper {
+    max-width: 50%;
+}
+
+.section__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: -8px;
+
+}
+
+.section__button {
+    width: 182px;
+    height: 57px;
+    background-color: #954CED;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 30px 16px 30px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Блок about */
+.about {
+    width: 100%;
+    height: 953px;
+    background-color: #1B1B1B;
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    position: relative;
+}
+
+.about__container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.about__title {
+    box-sizing: border-box;
+    width: 549px;
+    height: 102px;
+    padding: 0;
+    font-size: 95px;
+    align-content: start;
+    margin-top: 0;
+    margin-bottom: 80px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.about__columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.about__column {
+    width: 30%;
+    text-align: left;
+}
+
+.about__column--with-image {
+    width: 410px;
+    height: 140px;
+}
+
+.about__column-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:  #fff;
+    font-weight: 600;
+}
+
+.about__column-title--with-image {
+    font-size: 36px;
+    color:  #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    width: 410px;
+    height: 140px;
+    z-index: 2;
+}
+
+.about__column-title-image {
+    position: absolute;
+    width: 355px;
+    height: 45px;
+    z-index: 1;
+    left: 95px;
+    top: 272px;
+}
+
+.about__column-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color:  #fff;
+}
+
+.about__column-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about__feature {
+    margin-bottom: 20px;
+}
+
+.about__feature--block1,
+.about__feature--block2,
+.about__feature--block3,
+.about__feature--block4 {
+    margin-bottom: 40px;
+
+}
+
+.about__feature--block1 {
+    width: 321px;
+    height: 286px;
+}
+.about__feature--block2 {
+    margin-top: 50px;
+    width: 306px;
+    height: 319px;
+}
+.about__feature--block3 {
+     width: 301px;
+     height: 290px;
+ }
+.about__feature--block4 {
+    margin-top: 80px;
+      width: 336px;
+      height: 277px;
+  }
+
+.about__feature-image {
+    margin-bottom: 10px;
+}
+
+.about__feature-title {
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 51px;
+
+}
+
+.about__feature-text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: #fff;
+}
+
+/* Блок budss */
+.budss {
+    min-height: 636px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Блок pocent */
+.pocent {
+    min-height: 222px;
+    background-color: #eaeaea;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Блок why */
+.why {
+    min-height: 1192px;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Блок let */
+.let {
+    min-height: 1017px;
+    background-color: #ccc;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Блок footer */
+.footer {
+    height: 188px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Адаптивные стили для ширины 375px */
+@media (max-width: 375px) {
+    .page {
+        padding: 0 10px;
+    }
+
+    .header, .footer {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .main__section, .about, .budss, .pocent, .why, .let {
+        padding: 10px;
+    }
+}
+
+/* Адаптивные стили для ширины до 768px */
+@media (max-width: 768px) {
+    .page {
+        padding: 0 10px;
+    }
+
+    .header, .footer {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .main__section, .about, .budss, .pocent, .why, .let {
+        padding: 15px 10px;
+    }
+}
