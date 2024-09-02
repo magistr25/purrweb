@@ -325,11 +325,111 @@ body {
 
 /* Блок budss */
 .budss {
-    min-height: 636px;
-    background-color: #f1f1f1;
-    padding: 20px;
-    margin: 0 auto;
+    background-color: #1B1B1B;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
+
+.budss__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.budss__moving-text {
+    width: 200%; /* Увеличенная ширина для плавного движения */
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.budss__text-item {
+    padding: 0 1rem;
+    color: rgba(255, 255, 255, 0.1); /* Цвет по умолчанию */
+}
+
+/* Цвет текста для разных классов */
+.budss__text-item.blue {
+    color: #30D5C8;
+}
+
+.budss__text-item.violet {
+    color: #954CED;
+}
+
+.budss__text-item.orange {
+    color: #F8A24E;
+}
+
+/* Смещение для строк */
+
+
+.budss__moving-text--top {
+    justify-content: flex-end;
+    animation: budss__move-text-right 40s linear infinite;
+    margin-bottom: 80px;
+}
+
+.budss__moving-text--center {
+    justify-content: flex-start;
+    animation: budss__move-text-left 40s linear infinite;
+    margin-left: -850px;
+}
+
+.budss__moving-text--bottom {
+    justify-content: flex-end;
+    animation: budss__move-text-right 40s linear infinite;
+    margin-top: 80px;
+    margin-left: 300px;
+}
+
+@keyframes budss__move-text-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes budss__move-text-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+.budss__content {
+    position: relative;
+    z-index: 10;
+}
+
+.budss__phone {
+    position: relative;
+    z-index: 20;
+}
+
+.budss__phone-image {
+    width: auto;
+    height: 70vh;
+}
+
 
 /* Блок pocent */
 .pocent {
