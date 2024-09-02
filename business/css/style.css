@@ -149,7 +149,7 @@ body {
 
 .section__title {
     font-size: 96px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     margin-top: -50px;
     font-weight: 700;
     line-height: 101.76px;
@@ -236,13 +236,13 @@ body {
 .about__column-title {
     font-size: 24px;
     margin-bottom: 20px;
-    color:  #fff;
+    color: #fff;
     font-weight: 600;
 }
 
 .about__column-title--with-image {
     font-size: 36px;
-    color:  #fff;
+    color: #fff;
     font-weight: bold;
     line-height: 1.2;
     position: absolute;
@@ -263,7 +263,7 @@ body {
 .about__column-text {
     font-size: 16px;
     line-height: 1.6;
-    color:  #fff;
+    color: #fff;
 }
 
 .about__column-left {
@@ -288,20 +288,23 @@ body {
     width: 321px;
     height: 286px;
 }
+
 .about__feature--block2 {
     margin-top: 50px;
     width: 306px;
     height: 319px;
 }
+
 .about__feature--block3 {
-     width: 301px;
-     height: 290px;
- }
+    width: 301px;
+    height: 290px;
+}
+
 .about__feature--block4 {
     margin-top: 80px;
-      width: 336px;
-      height: 277px;
-  }
+    width: 336px;
+    height: 277px;
+}
 
 .about__feature-image {
     margin-bottom: 10px;
@@ -359,7 +362,12 @@ body {
 
 .budss__text-item {
     padding: 0 1rem;
-    color: rgba(255, 255, 255, 0.1); /* Цвет по умолчанию */
+    color: rgb(27, 27, 27);
+    text-shadow:
+            1px 1px 0px dimgrey,
+            -1px 1px 0px dimgrey,
+            1px -1px 0px dimgrey,
+            -1px -1px 0px dimgrey;
 }
 
 /* Цвет текста для разных классов */
@@ -431,13 +439,62 @@ body {
 }
 
 
-/* Блок pocent */
-.pocent {
-    min-height: 222px;
-    background-color: #eaeaea;
-    padding: 20px;
-    margin: 0 auto;
+/* Блок procent */
+.main__procent {
+    margin-top: 0;
+    width: 100%;
+    height: 222px;
+    background: #954CED;
+    padding: 40px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.procent__content {
+    width: 741px;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background: #954CED;
+}
+
+.procent__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.procent__item--first {
+    width: 217px;
+}
+
+.procent__item--second {
+    width: 163px;
+}
+
+.procent__item--third {
+    width: 161px;
+}
+
+.procent__value {
+    font-family: Outfit, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+}
+
+.procent__description {
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
 
 /* Блок why */
 .why {
