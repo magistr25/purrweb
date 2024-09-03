@@ -105,19 +105,6 @@ body {
     width: 157px;
 }
 
-.header__button {
-    width: 182px;
-    height: 57px;
-    background-color: #954CED;
-    color: #FFFFFF;
-    border: none;
-    padding: 16px 30px 16px 30px;
-    border-radius: 16px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-}
-
 /* Блок section */
 .section {
     width: 100%;
@@ -157,7 +144,8 @@ body {
 }
 
 .section__description {
-    width: 534px;
+    width: 537px;
+    height: 48px;
     font-size: 20px;
     margin-bottom: 30px;
     color: #FFFFFF;
@@ -672,16 +660,118 @@ body {
 
 }
 
-
-
-
 /* Блок let */
-.let {
-    min-height: 1017px;
-    background-color: #ccc;
-    padding: 20px;
-    margin: 0 auto;
+.main__let {
+    width: 100%; /* Изменено для соответствия ширине экрана */
+    height: 1017px;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
 }
+
+.let__content {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 65px;
+
+
+}
+
+.let__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 1320px;
+    height: 285px;
+    padding: 60px 0;
+    border-radius: 60px;
+    margin: 0 auto;
+    border: 1px solid #CFCFCF;
+
+}
+
+.let__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 68px;
+    text-align: center;
+}
+
+.let__button {
+    background-color: #954CED;
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.let__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    width: 100%;
+    height: 272px;
+}
+
+.let__text {
+    max-width: 822px;
+}
+
+.let__text-title {
+    width: 822px;
+    height: 204px;
+    gap: 0;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 102px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.let__text-description {
+    width: 550px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.let__icons {
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    padding: 30px 20px;
+}
+
+.let__icon--facebook, .let__icon--instagram {
+    height: 90px;
+    width: 90px;
+}
+.let__icon--twitter, .let__icon--tiktok {
+    height: 90px;
+    width: 90px;
+    margin-top: 120px;
+}
+
+.let__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.let__logo {
+    height: auto;
+}
+
 
 /* Блок footer */
 .footer {
