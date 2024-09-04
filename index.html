@@ -259,6 +259,64 @@
         </section>
 
     </main>
+    <!-- Модальное окно -->
+    <div id="contactModal" class="modal">
+
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <form class="modal__form">
+                <div class="modal__field">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter name" required>
+                </div>
+                <div class="modal__field">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter email" required>
+                </div>
+                <div class="modal__field">
+                    <label for="phone">Phone number <span class="required">*</span></label>
+                    <div class="input-with-flag">
+                        <img src="business/assets/images/flag.png" class="flag-icon" alt="Flag" />
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                </div>
+
+
+                <div class="modal__field">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" placeholder="Enter company">
+                </div>
+                <div class="modal__field">
+                    <label for="website">Website/Store URL</label>
+                    <input type="url" id="website" name="website" placeholder="Enter Website/Store URL">
+                </div>
+                <div class="modal__policy">
+                    <p>By submitting this form you are agreeing to Budss’s <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
+                </div>
+                <button type="submit" class="modal__submit">Contact sales</button>
+            </form>
+        </div>
+    </div>
+    <div id="cookieConsent" class="cookie-consent">
+        <p>This website uses cookies to ensure you get the best experience on our website. They also allow us to analyze user behavior in order to constantly improve the website for you.</p>
+        <div class="cookie-consent__buttons">
+            <button id="acceptCookies" class="cookie-button cookie-button--accept">Accept</button>
+            <button id="declineCookies" class="cookie-button cookie-button--decline">Decline</button>
+        </div>
+        <div class="cookie-consent__close">&times;</div>
+    </div>
+
+    <!-- Окно благодарности (по умолчанию скрыто) -->
+    <div class="thank-you-modal" >
+        <span class="thank-you__close">&times;</span>
+        <div class="thank-you-content">
+            <img src="business/assets/images/thank_you.png" height="232" width="297" alt="Success Image" />
+            <h2>Thank you!</h2>
+            <p>Thank you, we have received your application and will contact you soon!</p>
+            <button class="thank-you-button">Super!</button>
+        </div>
+    </div>
+
 
     <footer class="page__footer footer">
         <div class="footer__content">
@@ -292,10 +350,8 @@
             </div>
         </div>
     </footer>
-
-
 </div>
+<script src="business/js/modal.js"></script>
 
-<script src="business/js/script.js"></script>
 </body>
 </html>
